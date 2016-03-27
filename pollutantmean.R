@@ -3,7 +3,6 @@ pollutantmean <- function(directory, pollutant, id){
   all_monitors <- numeric(0)
   
   for (i in id){
-    #print (i)
     file_name <- paste0("00", i, ".csv")
     file_name <- substr(file_name, nchar(file_name) - 6, nchar(file_name))
     file_dir <- paste0(directory, file_name)
@@ -15,7 +14,6 @@ pollutantmean <- function(directory, pollutant, id){
     for (j in 1:length(df[, col_nr])){
       all_monitors <- append(all_monitors, df[j, col_nr])
     }
-    #print (length(all_monitors))
   }
   
   mean(all_monitors, na.rm = TRUE)
