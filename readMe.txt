@@ -14,3 +14,14 @@ function reads directory full of files and reports how many complete cases was i
 takes two arguments: directory and id (by default = 1:332)
 
 returns a data frame with ids and number of observations
+
+
+Part 3
+
+computes correlation between sulfate and nitrate for all locations where there are enough complete cases
+
+loops through all files
+
+takes two arguments: directory and treshold (by default = 0)
+
+return a vector of correlations
